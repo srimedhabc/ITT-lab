@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="frm1">
+  Enter Text: <input type="text" id="fname" value="medha"><br>
+
+</form>
+
+
+<p id="demo"><p>Click "Try it" to display the pig Latin Text.</p>
+<button onclick="translatePigLatin()">Try it</button></p>
+
+<script>
+
+function translatePigLatin() {
+    var str = document.getElementById("fname").value;
+var newStr="";
+
+newStr=str.substr(1)+str.substr(0,1);
+
+newStr+="ay";
+alert(newStr);
+}
+</script>
+
+</body>
+</html>
